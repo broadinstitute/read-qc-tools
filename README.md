@@ -18,21 +18,19 @@ Docker image containing tools for read QC and processing.
 ### Pull from GitHub Container Registry
 
 ```bash
-docker pull ghcr.io/OWNER/read-qc-tools:main
+docker pull ghcr.io/broadinstitute/read-qc-tools:main
 ```
-
-Replace `OWNER` with the GitHub organization or username.
 
 ### Run interactively
 
 ```bash
-docker run --rm -it -v $(pwd):/data ghcr.io/OWNER/read-qc-tools:main bash
+docker run --rm -it -v $(pwd):/data ghcr.io/broadinstitute/read-qc-tools:main bash
 ```
 
 ### Run a specific command
 
 ```bash
-docker run --rm -v $(pwd):/data ghcr.io/OWNER/read-qc-tools:main fastqc reads.fastq.gz
+docker run --rm -v $(pwd):/data ghcr.io/broadinstitute/read-qc-tools:main fastqc reads.fastq.gz
 ```
 
 ## Building Locally

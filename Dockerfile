@@ -8,6 +8,9 @@ RUN micromamba install -y -n base -f /tmp/env.yaml && \
 # Enable conda environment activation for subsequent RUN commands
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
+# Add manually to PATH for all the image-users who override our entrypoint
+ENV PATH="/opt/conda/bin:$PATH"
+
 # Verify key tools are available
 RUN python --version && \
     samtools --version | head -1 && \

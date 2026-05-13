@@ -1,4 +1,5 @@
 # read-qc-tools
+[![Build and Push Docker Image](https://github.com/broadinstitute/read-qc-tools/actions/workflows/docker.yml/badge.svg)](https://github.com/broadinstitute/read-qc-tools/pkgs/container/read-qc-tools)
 
 Docker image containing tools for read QC and processing.
 
